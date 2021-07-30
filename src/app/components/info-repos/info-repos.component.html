@@ -1,0 +1,8 @@
+<div class="info-repos" *ngIf="obj !== null">
+  <div class="info-repos__name">{{obj.name}}</div>
+  <a href="{{obj.html_url}}" target="_blank"><strong>Ссылка: {{obj.name}}</strong></a>
+  <p><strong>Создан:</strong> {{obj.created_at|dateAgo}}</p>
+  <p><strong>Имя:</strong> {{obj.owner.login}}</p>
+  <p><strong>Язык:</strong> {{obj.language}}</p>
+  <p>{{obj.description}}</p>
+</div>

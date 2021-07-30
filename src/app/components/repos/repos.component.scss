@@ -1,0 +1,48 @@
+.card {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #333333;
+
+  &-body {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    margin-right: 8px;
+
+    color: #333333;
+    text-decoration: none;
+  }
+}
+
+form {
+  padding-top: 2%;
+
+  input {
+    padding-left: 10px;
+  }
+}
+
+p,
+p strong {
+  margin-right: 4px;
+}
+
+button {
+  padding: 10px;
+  margin-left: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  background: grey;
+  border: 1px solid #333333;
+  cursor: pointer;
+}
+
+.form-group {
+  display: flex;
+}

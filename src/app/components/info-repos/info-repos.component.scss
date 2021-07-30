@@ -1,0 +1,21 @@
+p strong {
+  margin-right: 10px;
+}
+
+.info-repos {
+  border: 1px solid #333333;
+  padding: 10px;
+  margin: 20px 0;
+  width: 30%;
+
+  &__name {
+    font-size: 36px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+  margin-top: 8px;
+  display: block;
+}

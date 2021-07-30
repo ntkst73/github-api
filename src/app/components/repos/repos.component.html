@@ -1,0 +1,19 @@
+<div class="container-fluid bg-light">
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <input type="text" name="search" [(ngModel)]='repoName' (keyup)="findRepo()">
+        <button (click)="sortByName()">Сортировать по имени репозиториев</button>
+        <button (click)="sortByRepos()">Сортировать по имени пользователя</button>
+      </div>
+    </form>
+    <div *ngIf="repoitems && repoName != '' ">
+      <div class="card" *ngFor='let item of repoitems'>
+        <a class="card-body" [routerLink]="'/info/' + item.id" appHighlight>
+          <p><strong>Репозиторий:</strong> {{item.name}}</p>
+          <p><strong>Пользователь:</strong> {{item.owner.login}}</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
